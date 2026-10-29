@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/courseassistant
+    username: jaisharma
+    password: Bing@1234
+
+  application:
+    name: courseassistant
+
+  ai:
+    model:
+      chat: ollama
+      embedding: ollama
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: gemma4:e2b
+      embedding:
+        options:
+          model: nomic-embed-text
